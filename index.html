@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2 id="question">Question will appear here</h2>
+        <ul id="options">
+            <!-- Multiple choice options will go here -->
+        </ul>
+        <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+        <p id="score">Score: 0</p>
+    </div>
+
+    <div id="result-container" style="display:none;">
+        <h2>Quiz Finished</h2>
+        <p id="final-score">Your final score is: 0</p>
+        <p id="failures" style="display:none;">You failed the following questions:</p>
+        <ul id="failed-questions"></ul>
+        <button onclick="retakeQuiz()">Retake Quiz</button>
+        <button onclick="viewFailedAnswers()">View Failed Questions</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
